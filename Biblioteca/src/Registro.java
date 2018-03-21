@@ -12,7 +12,7 @@ public class Registro {
 	}
 	
 	//TITULO LIBRO
-	
+	 
 	public String getTitulo() {
 		return titulo;
 	}
