@@ -6,6 +6,7 @@ public class Libro {
 	private Integer fechaPublicacion;
 	private Double precio;
 	
+	// construct
 	Libro(String titulo, String autor, Integer fechaPublicacion, Double precio){
 		this.titulo = titulo;
 		this.autor = autor;
