@@ -11,6 +11,8 @@ public class Registro {
 		this.cantidad = cantidad;
 	}
 	
+	//TITULO LIBRO
+	
 	public String getTitulo() {
 		return titulo;
 	}
@@ -18,6 +20,8 @@ public class Registro {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+	
+	//ID LIBRO
 	
 	public int getId() {
 		return id;
@@ -27,6 +31,8 @@ public class Registro {
 		this.id = id;
 	}
 	
+	
+	//CANTIDAD LIBROS
 	public int getCantidad() {
 		return cantidad;
 	}
