@@ -1,10 +1,15 @@
+import java.util.Scanner;
 
-public class Libro {
+public class Libro implements GestionBiblio{
 
 	private String titulo;
 	private String autor;
 	private Integer fechaPublicacion;
 	private Double precio;
+	
+	Libro(){
+		
+	}
 	
 	// construct
 	Libro(String titulo, String autor, Integer fechaPublicacion, Double precio){
@@ -48,6 +53,34 @@ public class Libro {
 		
 	public void setPrecio(Double precio) {
 		this.precio = precio;
+	}
+
+	//Utilizamos el método de la interfaz
+	@Override
+	public void ejectuarAccion() {
+		
+		Libro libro = new Libro();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Dime el titulo del libro: ");
+		String titulo = sc.nextLine();
+		
+		System.out.println("Dime el autor: ");
+		String autor = sc.nextLine();
+		
+		System.out.println("Dime la fecha de publicación: ");
+		int fecha_pub = sc.nextInt();
+		
+		System.out.println("Dime el precio del libro: ");
+		double precio = sc.nextDouble();
+		
+		System.out.println("Libro correctamente dado de alta: \n" + 
+							"Titulo: " + titulo + "\n" +
+							"Autor: " + autor + "\n" + 
+							"Fecha Publicación: " + fecha_pub + "\n" + 
+							"Precio: " + precio);
+		
 	}
 	
 	

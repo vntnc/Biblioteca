@@ -1,7 +1,6 @@
 
 public interface GestionBiblio {
 
-	String getNombre();
-	String getDni();
+	public void ejectuarAccion();
 	
 }
