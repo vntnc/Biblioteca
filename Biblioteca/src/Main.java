@@ -47,7 +47,7 @@ public class Main {
 	                      Cliente cliente = new Cliente(nombreCliente,DNI);
 	                      clientes.add(cliente);
 	                      
-	                      /*for(int i = 0; i<clientes.size();i++) {
+	                      /* for(int i = 0; i<clientes.size();i++) {
 	                    	 System.out.println(clientes.get(i));
 	                    	  
 	                      }*/
