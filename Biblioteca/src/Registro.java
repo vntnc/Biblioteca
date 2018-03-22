@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Registro implements GestionBiblio{
 
@@ -45,10 +46,25 @@ public class Registro implements GestionBiblio{
 		this.cantidad = cantidad;
 	}
 
-	//Utilizamos el método de la interfaz
 	@Override
 	public void ejectuarAccion() {
-		System.out.println("Estado: nuevo registro");
+		
+		Registro registro = new Registro();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Dime el titulo del libro: ");
+		String titulo = sc.nextLine();
+		
+		System.out.println("Dime la referencia del libro: ");
+		int id = sc.nextInt();
+		
+		System.out.println("Dime la cantidad de libros a añadir");
+		int cantidad = sc.nextInt();
+		
+		System.out.println("Se han añadido " + cantidad + " libros a la colección");
+		
 	}
+	
 	
 }

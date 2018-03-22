@@ -12,6 +12,7 @@ public class Main {
 		Biblioteca_gestor biblio = new Biblioteca_gestor();
 		Cliente cliente = new Cliente();
 		Libro libro = new Libro();
+		Registro registro = new Registro();
 
 		int opcion = 0;
 		Scanner sc = new Scanner(System.in);
@@ -30,7 +31,12 @@ public class Main {
 					biblio.setBiblio(libro);
 				break;
 				case 3:
+					//Le pasamos a la biblio el registro
+					biblio.setBiblio(registro);
+				break;
+				case 4:
 					System.exit(0);
+				break;
 			default:
 				System.out.println("Solo números entre 1 y 4");
 			}
@@ -70,9 +76,10 @@ public class Main {
 		Scanner sn = new Scanner(System.in);
 
 			System.out.println("******************************************************\n");
-			System.out.println("**************** 1. Añadir cliente *******************\n");
+			System.out.println("**************** 1. Añadir Cliente *******************\n");
 			System.out.println("****************  2. Añadir Libro  *******************\n");
-			System.out.println("****************     3. Salir      *******************\n");
+			System.out.println("**************** 3. Nuevo Ejemplar *******************\n");
+			System.out.println("****************     4. Salir      *******************\n");
 			System.out.println("******************************************************");
 			
 	}

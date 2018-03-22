@@ -46,7 +46,8 @@ public class Cliente implements GestionBiblio{
 		System.out.println("Dime tu dni: ");
 		String dni = sc.nextLine();
 		
-		System.out.println("Estado: añadido nuevo Cliente " + nombre + ", " + dni);
+		System.out.println("Nuevo Cliente: \n" + 
+						   "Nombre: " + nombre + ", DNI: " + dni);
 	}
 	
 }
