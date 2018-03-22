@@ -1,9 +1,13 @@
 
-public class Registro {
+public class Registro implements GestionBiblio{
 
 	private String titulo;
 	private int id;
 	private int cantidad;
+	
+	Registro(){
+		
+	}
 	
 	Registro(String titulo, int id, int cantidad){
 		this.titulo = titulo;
@@ -39,6 +43,12 @@ public class Registro {
 	
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
+	}
+
+	//Utilizamos el método de la interfaz
+	@Override
+	public void ejectuarAccion() {
+		System.out.println("Estado: nuevo registro");
 	}
 	
 }

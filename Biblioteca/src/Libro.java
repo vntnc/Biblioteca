@@ -1,10 +1,14 @@
 
-public class Libro {
+public class Libro implements GestionBiblio{
 
 	private String titulo;
 	private String autor;
 	private Integer fechaPublicacion;
 	private Double precio;
+	
+	Libro(){
+		
+	}
 	
 	// construct
 	Libro(String titulo, String autor, Integer fechaPublicacion, Double precio){
@@ -48,6 +52,12 @@ public class Libro {
 		
 	public void setPrecio(Double precio) {
 		this.precio = precio;
+	}
+
+	//Utilizamos el método de la interfaz
+	@Override
+	public void ejectuarAccion() {
+		System.out.println("Estado: nuevo libro");
 	}
 	
 	
