@@ -4,7 +4,7 @@ public class Libro implements GestionBiblio{
 
 	private String titulo;
 	private String autor;
-	private Integer fechaPublicacion;
+	private String fechaPublicacion;
 	private Double precio;
 	
 	Libro(){
@@ -12,7 +12,7 @@ public class Libro implements GestionBiblio{
 	}
 	
 	// construct
-	Libro(String titulo, String autor, Integer fechaPublicacion, Double precio){
+	Libro(String titulo, String autor, String fechaPublicacion, Double precio){
 		this.titulo = titulo;
 		this.autor = autor;
 		this.fechaPublicacion = fechaPublicacion;
@@ -38,7 +38,7 @@ public class Libro implements GestionBiblio{
 	}
 	
 	// *** FECHA PUBLICACION ***
-	public Integer setFechaPublicacion() {
+	public String setFechaPublicacion() {
 		return this.fechaPublicacion;
 	}
 		
@@ -70,7 +70,7 @@ public class Libro implements GestionBiblio{
 		String autor = sc.nextLine();
 		
 		System.out.println("Dime la fecha de publicación: ");
-		int fecha_pub = sc.nextInt();
+		String fecha_pub = sc.next();
 		
 		System.out.println("Dime el precio del libro: ");
 		double precio = sc.nextDouble();
