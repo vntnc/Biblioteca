@@ -68,15 +68,12 @@ public class Main {
 
 	private static void muestraMenu() {
 		Scanner sn = new Scanner(System.in);
-		
-		StringBuffer menu = new StringBuffer();
 
-			System.out.println("------------------------------------------------------");
-			System.out.println("1. Añadir cliente");
-			System.out.println("2. Añadir Libro");
-			System.out.println("3. Salir");
-			System.out.println("------------------------------------------------------");
+			System.out.println("******************************************************\n");
+			System.out.println("**************** 1. Añadir cliente *******************\n");
+			System.out.println("****************  2. Añadir Libro  *******************\n");
+			System.out.println("****************     3. Salir      *******************\n");
+			System.out.println("******************************************************");
 			
-		System.out.println(menu.toString());
 	}
 }
